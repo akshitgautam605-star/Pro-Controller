@@ -19,7 +19,7 @@ jobs:
           arduino-cli config set library.enable_unsafe_install true
           arduino-cli core update-index
           arduino-cli core install esp32:esp32@2.0.17
-          arduino-cli lib install "LovyanGFX" "NimBLE-Arduino@1.4.2" "PCF8574 library"
+          arduino-cli lib install "LovyanGFX" "NimBLE-Arduino" "PCF8574 library"
           arduino-cli lib install --git-url "$GIT"
 
       - name: Compile Sketch
